@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+<!--    Below is a cardveiw-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="12dp">
+<!--        Below is another linear layout that dictates how thw content will be aligned-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#2BDBDB">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name"
+        android:text="Product Name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+<!--    Below is product imege-->
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:id="@+id/product_photo"
+    android:src="@mipmap/ic_launcher"
+    android:scaleType="centerCrop"
+    android:layout_marginTop="3dp"/>
+
+<!--    below is text vewi for the product cost-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_cost"
+        android:text="Kes 500"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#0A74E7"
+        android:layout_marginLeft="10dp"/>
+
+
+<!--    below is a textveiw for product description-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_description"
+        android:text="Product description will appear here"
+        android:textSize="20sp"
+        android:textColor="#123"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:layout_marginTop="3dp"/>
+<!--    below is the purchse now button-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPurchase"
+        android:text="Purchase now"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#0475ED"
+        android:textSize="20sp"
+        android:textColor="#fff"/>
+
+
+
+</LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
